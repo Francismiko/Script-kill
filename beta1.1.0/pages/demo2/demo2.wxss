@@ -1,0 +1,70 @@
+/* pages/demo2/demo2.wxss */
+/*水平居中*/
+.center-align{
+    align-items: center;
+}
+
+/*完全居中样式*/
+.center{
+    display: grid;/*网格布局*/
+    place-items: center;/*水平及垂直居中的简写*/
+  }
+
+/*剧本库大容器*/
+.storeHouseContainer{
+    width: 100vw;/*宽*/
+    height: auto;/*高*/
+    background-color: black;
+}
+
+/*已玩过容器*/
+.playedContainer{
+    margin-top: 8vh;/*上外边距*/
+    padding-bottom: 20rpx;/*底内边距*/
+    border-radius: 20rpx;/*圆角*/
+    width: 90%;/*宽*/
+    height: auto;/*高*/
+    background-color: rgb(255, 183, 183);/*背景色*/
+}
+
+/*未玩过容器*/
+.playedContainer-N{
+    margin-top: 1vh;/*上外边距*/
+    padding-bottom: 20rpx;/*下内边距*/
+    border-radius: 20rpx;/*圆角*/
+    width: 90%;/*宽*/
+    height: auto;/*高*/
+    background-color: rgb(123, 255, 141);/*背景色*/
+}
+
+/*已玩过样式*/
+.playedContainer view.Box{
+    margin-bottom: 20rpx;/*下外边距*/
+    border-radius: 15rpx;/*圆角*/
+    width: 100%;/*宽*/
+    height: 80rpx;/*高*/
+    background-color: rgb(255, 184, 249);/*背景色*/
+}
+
+/*未玩过样式*/
+.playedContainer-N view.Box{
+    margin-bottom: 20rpx;/*下外边距*/
+    border-radius: 15rpx;/*圆角*/
+    width: 100%;/*宽*/
+    height: 80rpx;/*高*/
+    background-color: rgb(196, 236, 255);/*背景色*/
+}
+
+/*更多样式*/
+.playedContainer view.moreBox{
+    margin-top: 40rpx;/*上外边距*/
+    width: 92%;/*宽*/
+    height: 80rpx;/*高*/
+}
+
+/*更多样式*/
+.playedContainer-N view.moreBox{
+    margin-top: 40rpx;/*上外边距*/
+    width: 92%;/*宽*/
+    height: 80rpx;/*高*/
+}

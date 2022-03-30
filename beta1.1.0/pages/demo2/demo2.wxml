@@ -1,0 +1,37 @@
+<!--pages/demo2/demo2.wxml-->
+<view class="storeHouseContainer center">
+    <!--已玩过内容-->
+    <view class="playedContainer">
+        <!--吸顶距离-->
+        <van-sticky offset-top="{{ 0 }}">
+            <view class="Box center">
+                <text>已玩过</text>
+            </view>
+        </van-sticky>
+        <!--vant的宫格组件 列数 / 边距-->
+        <van-grid column-num="3" gutter="{{ 30 }}">
+            <van-grid-item icon="photo-o" text="demo" wx:for="{{ elementNums1 }}" />
+        </van-grid>
+        <!--点击展开更多内容-->
+        <view class="moreBox" style="display: {{displayBool1}};">
+            <van-button bindtap="moreClick1" style="float: right;display: {{displayBool1}};">展开更多>></van-button>
+        </view>
+    </view>
+    <!--未玩过内容-->
+    <view class="playedContainer-N">
+        <!--吸顶距离/图层权重-->
+        <van-sticky offset-top="{{ 40 }}" z-index="{{ 100 }}">
+            <view class="Box center">
+                <text>未玩过</text>
+            </view>
+        </van-sticky>
+        <!--vant的宫格组件-->
+        <van-grid column-num="3" gutter="{{ 30 }}">
+            <van-grid-item icon="photo-o" text="demo" wx:for="{{ elementNums2 }}" />
+        </van-grid>
+        <!--点击展开更多内容-->
+        <view class="moreBox" style="display: {{displayBool2}};">
+            <van-button bindtap="moreClick2" style="float: right;display: {{displayBool2}};">展开更多>></van-button>
+        </view>
+    </view>
+</view>

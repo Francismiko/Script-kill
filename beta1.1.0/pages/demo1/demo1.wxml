@@ -1,0 +1,58 @@
+<!--剧本杀小程序首页内容-->
+
+<view class="indexContainer">
+    <!--首页轮播图-->
+    <!--轮播图下方的小豆豆/豆豆颜色/豆豆执行颜色/自动轮播/播放间隔/衔接滑动-->
+    <swiper class="indexSwiperContainer" indicator-dots="true" indicator-color="red" indicator-active-color="black" autoplay="true" interval="1500" circular="ture">
+        <!--单个轮播图-->
+        <swiper-item wx:for="{{ 5 }}">
+            <view>
+                <image class="indexSwiper-item" src="/images/测试1.jpeg"></image>
+            </view>
+        </swiper-item>
+    </swiper>
+
+    <!--公告栏-->
+    <view class="indexContainer1">
+        <!--公告栏icon图片-->
+        <view>
+            <image src="/images/喇叭.jpg"></image>
+        </view>
+        <swiper class="indexBox2" autoplay="true" interval="4500" circular="ture">
+        <!--滚动文本内容,用的是Mustache语法将js的page.data内容传参过来-->
+            <swiper-item class="center">
+                <text>{{notice1}}</text>
+            </swiper-item>
+            <swiper-item class="center">
+                <text>{{notice2}}</text>
+            </swiper-item>
+        </swiper>
+    </view>
+
+    <!--首页选项按钮-->
+    <view class="indexContainer2">
+        <!--剧本列表-->
+        <view class="indexBox3-L">
+            <text class="indexBox3-L-C center">剧本列表</text>
+        </view>
+        <!--组队-->
+        <view class="indexBox3-R">
+            <text class="indexBox3-R-C center">组队上车啦</text>
+        </view>
+    </view>
+
+    <!--排行榜-->
+    <view class="indexContainer3">
+        <view class="indexBox3-M">
+            <text class="indexBox3-M-C center">排行榜</text>
+        </view>
+    </view>
+
+    <!--热门推荐-->
+    <text class="indexContainer4">热门推荐HOT</text>
+    <!--设置为X轴滑动-->
+    <scroll-view class="indexHotContainer" scroll-x="true">
+        <!--手滑滚动图-->
+        <image class="indexHotScroll" wx:for="{{ 8 }}" src="/images/测试2.jpeg"></image>
+    </scroll-view>
+</view>

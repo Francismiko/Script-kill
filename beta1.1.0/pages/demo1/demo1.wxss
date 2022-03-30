@@ -1,0 +1,183 @@
+/*首页渲染样式*/
+
+/*完全居中样式*/
+.center{
+    display: grid;/*网格布局*/
+    place-items: center;/*水平及垂直居中的简写*/
+  }
+
+/*.首页容器*/
+.indexContainer{
+    width: 100vw;/*100视宽*/
+    height: auto;/*自适应填充*/
+    background-color: black;
+}
+
+/*轮播图容器的样式*/
+.indexSwiperContainer{
+    padding-top: 40rpx;/*上内边距*/
+    margin-bottom: 40rpx;/*下外边距*/
+    width: 100vw;/*宽度*/
+    height: 400rpx;/*高度*/
+}
+
+/*单个轮播图的样式*/
+.indexSwiper-item{
+    border-radius: 20rpx;/*圆角*/
+    width: 500rpx;/*宽度*/
+    height: 400rpx;/*高度*/
+}
+
+/*在父元素swiper下  子元素view的样式*/
+swiper view{
+    text-align: center;/*内容居中*/
+}
+
+/*公告栏容器1的样式*/
+.indexContainer1{
+    display: flex;/*弹性布局*/
+    margin-left: 8vw;/*左外边距*/
+    margin-right: 8vw;/*右外边距*/
+    border-radius: 16rpx;/*圆角*/
+    width: 84vw;/*宽*/
+    height: 80rpx;/*高*/
+    background-color: white;/*背景色*/
+}
+
+/*小组件容器2*/
+.indexContainer2{
+    display: flex;/*弹性布局*/
+    width: 100vw;/*宽*/
+    height: 200rpx;/*高*/
+    float: left;/*左浮动*/
+}
+
+/*小组件容器3*/
+.indexContainer3{
+    display: flex;/*弹性布局*/
+    width: 100vw;/*宽*/
+    height: 100rpx;/*高*/
+    float: left;/*左浮动*/
+}
+
+/*小组件容器4*/
+.indexContainer4{
+    display: flex;/*弹性布局*/
+    margin-left: 8vw;/*左外边距*/
+    padding-top: 30rpx;/*上内边距*/
+    margin-right: 8vw;/*右外边距*/
+    width: 84vw;/*宽*/
+    height: 50rpx;/*高*/
+    background-color: rgb(0, 0, 0);/*背景色*/
+    color: cornsilk;/*字体颜色*/
+}
+
+/*热门推荐容器*/
+.indexHotContainer{
+    padding-top: 30rpx;/*上内边距*/
+    padding-left: 0rpx;/*左内边距*/
+    padding-right: 0rpx;/*右内边距*/
+    padding-bottom: 60rpx;/*下内边距*/
+    width: 750rpx;/*宽*/
+    height: auto;/*高*/
+    white-space: nowrap;/*X轴滚动必须加上这个元素!!!*/
+}
+
+/*公告栏图片盒子*/
+.indexContainer1 view{
+    display: flex;/*弹性布局*/
+    margin-top: 10rpx;/*上外边距*/
+    margin-bottom: 10rpx;/*下外边距*/
+    margin-left: 30rpx;/*左外边距*/
+    margin-right: 10rpx;/*右外边距*/
+    width: 60rpx;/*宽*/
+    height: 60rpx;/*高*/
+    float: left;/*左浮动*/
+}
+
+/*公告栏滚动字幕盒子*/
+.indexBox2{
+    display: flex;/*弹性布局*/
+    width: 75%;/*宽*/
+    height: 100%;/*高*/
+    float: left;/*左浮动*/
+}
+
+/*三个组件盒子左/右/中*/
+.indexBox3-L{
+    display: flex;/*弹性布局*/
+    margin-top: 25rpx;/*上外边距*/
+    margin-bottom: auto;/*下外边距*/
+    margin-left: 60rpx;/*左外边距*/
+    margin-right: auto;/*右外边距*/
+    border-radius: 16rpx;/*圆角*/
+    width: 300rpx;/*宽*/
+    height: 150rpx;/*高*/
+    float: left;/*左浮动*/
+    background-color: rgb(255, 255, 255);/*颜色*/
+}
+.indexBox3-M{
+    display: inline-block;/*行内块布局*/
+    margin-top: 0rpx;/*上外边距*/
+    margin-bottom: auto;/*下外边距*/
+    margin-left: 60rpx;/*左外边距*/
+    margin-right: 60rpx;/*右外边距*/
+    border-radius: 16rpx;/*圆角*/
+    width: 630rpx;/*宽*/
+    height: 100rpx;/*高*/
+    float: none;/*无浮动*/
+    background-color: rgb(255, 255, 255);/*颜色*/
+}
+.indexBox3-R{
+    display: flex;/*弹性布局*/
+    margin-top: 25rpx;/*上外边距*/
+    margin-bottom: auto;/*下外边距*/
+    margin-left: auto;/*左外边距*/
+    margin-right: 60rpx;/*右外边距*/
+    border-radius: 16rpx;/*圆角*/
+    width: 300rpx;/*宽*/
+    height: 150rpx;/*高*/
+    float: right;/*左浮动*/
+    background-color: rgb(255, 255, 255);/*颜色*/
+}
+
+/*组件盒子的子盒*/
+.indexBox3-L-C{
+    padding-top: 20rpx;/*上内边距*/
+    padding-bottom: 20rpx;/*下内边距*/
+    padding-left: 30rpx;/*左内边距*/
+    padding-right: 30rpx;/*右内边距*/
+    width: 240rpx;/*父盒宽度-内边距*2*/
+    height: 110rpx;/*父盒高度-内边距*2*/
+}
+.indexBox3-R-C{
+    padding-top: 20rpx;/*上内边距*/
+    padding-bottom: 20rpx;/*下内边距*/
+    padding-left: 30rpx;/*左内边距*/
+    padding-right: 30rpx;/*右内边距*/
+    width: 240rpx;/*父盒宽度-内边距*2*/
+    height: 110rpx;/*父盒高度-内边距*2*/
+}
+.indexBox3-M-C{
+    padding-top: 10rpx;/*上内边距*/
+    padding-bottom: 10rpx;/*下内边距*/
+    padding-left: 50rpx;/*左内边距*/
+    padding-right: 50rpx;/*右内边距*/
+    width: 530rpx;/*父盒宽度-内边距*2*/
+    height: 80rpx;/*父盒高度-内边距*2*/
+}
+
+/*公告栏图片样式*/
+.indexContainer1 view image{
+    width: 60rpx;/*宽*/
+    height: 60rpx;/*高*/
+}
+
+/*热门推荐图片样式*/
+.indexHotScroll{
+    width: 200rpx;/*宽*/
+    height: 300rpx;/*高*/
+    margin-left: 40rpx;
+    margin-right: 100rpx;/*右外边距*/
+    display: inline-block;/*将对象呈递为内联块级对象*/
+}

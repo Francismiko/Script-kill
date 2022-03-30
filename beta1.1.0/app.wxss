@@ -1,0 +1,6 @@
+/**app.wxss**/
+/*文本样式*/
+text{
+    display: flex;/*弹性布局*/
+    font-size: 40rpx;/*字体大小*/
+}
