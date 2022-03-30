@@ -1,12 +1,7 @@
 {
     "description": "项目配置文件",
     "packOptions": {
-        "ignore": [
-            {
-                "type": "file",
-                "value": ".eslintrc.js"
-            }
-        ]
+        "ignore": []
     },
     "setting": {
         "urlCheck": true,
@@ -17,7 +12,7 @@
         "minified": true,
         "newFeature": false,
         "coverView": true,
-        "nodeModules": true,
+        "nodeModules": false,
         "autoAudits": false,
         "showShadowRootInWxmlPanel": true,
         "scopeDataCheck": false,
@@ -25,7 +20,7 @@
         "checkInvalidKey": true,
         "checkSiteMap": true,
         "uploadWithSourceMap": true,
-        "compileHotReLoad": true,
+        "compileHotReLoad": false,
         "lazyloadPlaceholderEnable": false,
         "useMultiFrameRuntime": true,
         "useApiHook": true,
@@ -35,7 +30,6 @@
             "disablePlugins": [],
             "outputPath": ""
         },
-        "enableEngineNative": false,
         "useIsolateContext": true,
         "userConfirmedBundleSwitch": false,
         "packNpmManually": false,
@@ -44,12 +38,13 @@
         "disableUseStrict": false,
         "minifyWXML": true,
         "showES6CompileOption": false,
-        "useCompilerPlugins": false
+        "useCompilerPlugins": false,
+        "ignoreUploadUnusedFiles": true
     },
     "compileType": "miniprogram",
-    "libVersion": "2.23.1",
+    "libVersion": "2.23.2",
     "appid": "wx95cab046c834f214",
-    "projectname": "beta1.1.0",
+    "projectname": "Script-kill",
     "debugOptions": {
         "hidedInDevtools": []
     },
